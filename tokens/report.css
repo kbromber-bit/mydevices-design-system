@@ -1,0 +1,15 @@
+/* Report & deliverable palette — for GENERATED artifacts only (decks, docs, spreadsheets),
+   where data must read as good / warning / bad. Never use these on marketing surfaces. */
+:root{
+  --rp-good:#1a7a48;      /* @kind color */
+  --rp-good-tint:#eaf6ef; /* @kind color */
+  --rp-warn:#d98c1f;      /* @kind color */
+  --rp-warn-tint:#fdf3e3; /* @kind color */
+  --rp-bad:#c0392b;       /* @kind color */
+  --rp-bad-tint:#fdeeeb;  /* @kind color */
+  --rp-info:#0d83d0;      /* @kind color */
+  --rp-paper:#f4f6f8;     /* @kind color */
+  --rp-line:#e3e7ea;      /* @kind color */
+  --rp-ink:#1b2733;       /* @kind color */
+  --rp-ink-soft:#5a6b7a;  /* @kind color */
+}

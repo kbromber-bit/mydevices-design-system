@@ -1,0 +1,31 @@
+:root{
+  /* Cards 12-16px. Buttons 9-11px. Chips and badges are full pills. */
+  --radius-card:16px; /* @kind radius */
+  --radius-card-sm:14px; /* @kind radius */
+  --radius-card-xs:12px; /* @kind radius */
+  --radius-btn:11px; /* @kind radius */
+  --radius-btn-sm:9px; /* @kind radius */
+  --radius-input:10px; /* @kind radius */
+  --radius-pill:99px; /* @kind radius */
+  --radius-tiny:6px; /* @kind radius */
+
+  --border:1px solid var(--md-line); /* @kind other */
+  --border-strong:1.5px solid var(--md-line); /* @kind other */
+  --border-inner-1:1px solid var(--md-line-soft); /* @kind other */
+  --border-dashed:2px dashed var(--md-line-dashed); /* @kind other */
+  /* vertical-card top rule */
+  --rule-category:3px; /* @kind other */
+  /* blue left rule on pull quotes */
+  --rule-quote:3px; /* @kind other */
+
+  /* Shadows are BLUE-TINTED GLOWS. Never grey, never black. */
+  --glow-sm:0 12px 24px -14px rgba(13,131,208,.8); /* @kind shadow */
+  --glow-btn:0 16px 32px -16px rgba(13,131,208,.75); /* @kind shadow */
+  --glow-btn-hover:0 22px 42px -18px rgba(13,131,208,.95); /* @kind shadow */
+  --glow-card:0 24px 40px -34px rgba(13,131,208,.5); /* @kind shadow */
+  --glow-card-hover:0 18px 34px -22px rgba(13,131,208,.6); /* @kind shadow */
+  --glow-panel:0 30px 60px -46px rgba(13,131,208,.55); /* @kind shadow */
+  --glow-panel-lg:0 40px 80px -52px rgba(13,131,208,.55); /* @kind shadow */
+  --glow-artifact:0 16px 30px -26px rgba(13,131,208,.55); /* @kind shadow */
+  --glow-navy:0 24px 50px -30px rgba(11,36,54,.85); /* @kind shadow */
+}

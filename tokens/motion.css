@@ -1,0 +1,25 @@
+:root{
+  /* every hover transition on the site */
+  --dur-fast:.16s; /* @kind other */
+  --dur-mid:.35s; /* @kind other */
+  --dur-enter:.45s; /* @kind other */
+  --dur-enter-slow:.5s; /* @kind other */
+  /* the system is deliberately plain: ease */
+  --ease:ease; /* @kind other */
+  /* button hover */
+  --lift:translateY(-2px); /* @kind other */
+  /* card hover */
+  --lift-card:translateY(-3px); /* @kind other */
+  --transition-hover:transform var(--dur-fast) ease,box-shadow var(--dur-fast) ease,background var(--dur-fast) ease,border-color var(--dur-fast) ease,color var(--dur-fast) ease; /* @kind other */
+}
+/* Motion vocabulary — copied verbatim from the source design so consumers animate identically. */
+@keyframes mdpulse{0%{box-shadow:0 0 0 0 rgba(27,185,138,.55)}70%{box-shadow:0 0 0 7px rgba(27,185,138,0)}100%{box-shadow:0 0 0 0 rgba(27,185,138,0)}}
+@keyframes mdrise{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+@keyframes mdpop{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+@keyframes mdfade{from{opacity:.25}to{opacity:1}}
+@keyframes mdgrow{from{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}
+@keyframes mdflow{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes mdsignal{0%,100%{background:#3a4d5e;box-shadow:none}45%,55%{background:#56b0ea;box-shadow:0 0 9px rgba(86,176,234,.85)}}
+@keyframes mdglow{0%,100%{box-shadow:0 24px 50px -30px rgba(11,36,54,.85)}50%{box-shadow:0 24px 50px -30px rgba(11,36,54,.85),0 0 30px 1px rgba(86,176,234,.5)}}
+@keyframes mdcell{from{opacity:0}to{opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}

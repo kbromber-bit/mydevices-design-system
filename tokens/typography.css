@@ -1,0 +1,63 @@
+:root{
+  /* ---- Families: three, no more ---- */
+  /* ALL CAPS headlines, buttons, names */
+  --font-display:'League Spartan',system-ui,sans-serif; /* @kind font */
+  /* all prose */
+  --font-body:'Lato',system-ui,sans-serif; /* @kind font */
+  /* eyebrows, labels, captions, metadata */
+  --font-mono:'JetBrains Mono',ui-monospace,monospace; /* @kind font */
+
+  /* ---- Weights available ---- */
+  /* headlines (h1/h2) */
+  --fw-display:800; /* @kind font */
+  /* subheads, buttons, names, stat labels */
+  --fw-display-strong:700; /* @kind font */
+  /* nav links */
+  --fw-display-med:600; /* @kind font */
+  --fw-body:400; /* @kind font */
+  --fw-body-bold:700; /* @kind font */
+  /* inline logotype-ish emphasis, brand names in chips */
+  --fw-body-black:900; /* @kind font */
+  --fw-mono:400; /* @kind font */
+  --fw-mono-med:500; /* @kind font */
+  --fw-mono-bold:700; /* @kind font */
+
+  /* ---- Display scale (fluid, as authored on the site) ---- */
+  --type-h1:clamp(44px,7.5vw,88px); /* @kind font */
+  --type-h2:clamp(28px,4vw,46px); /* @kind font */
+  /* card titles, uppercase */
+  --type-h3:16px; /* @kind font */
+  --type-stat-xl:clamp(46px,7vw,74px); /* @kind font */
+  --type-stat-lg:clamp(34px,5vw,52px); /* @kind font */
+  --type-stat-md:22px; /* @kind font */
+
+  --lh-h1:.9; /* @kind font */
+  --lh-h2:1; /* @kind font */
+  --lh-body:1.55; /* @kind font */
+  --lh-body-loose:1.65; /* @kind font */
+  --ls-display:-.01em; /* @kind font */
+
+  /* ---- Body scale ---- */
+  --type-lede:clamp(18px,2.3vw,22px); /* @kind font */
+  --type-body-lg:17px; /* @kind font */
+  --type-body:16px; /* @kind font */
+  --type-body-sm:14px; /* @kind font */
+  --type-body-xs:13.5px; /* @kind font */
+
+  /* ---- Mono scale + the wide tracking that defines it ---- */
+  /* section eyebrow */
+  --type-eyebrow:16px; /* @kind font */
+  --type-label:13px; /* @kind font */
+  --type-caption:12px; /* @kind font */
+  --type-caption-sm:11px; /* @kind font */
+  --type-caption-xs:10px; /* @kind font */
+  --ls-mono:.04em; /* @kind font */
+  --ls-mono-wide:.06em; /* @kind font */
+  --ls-mono-wider:.08em; /* @kind font */
+  --ls-mono-widest:.1em; /* @kind font */
+
+  /* semantic aliases */
+  --font-heading:var(--font-display); /* @kind font */
+  --font-eyebrow:var(--font-mono); /* @kind font */
+  --font-ui:var(--font-display); /* @kind font */
+}

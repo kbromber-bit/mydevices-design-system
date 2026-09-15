@@ -1,0 +1,9 @@
+*{box-sizing:border-box}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font-family:var(--font-body);line-height:var(--lh-body);-webkit-font-smoothing:antialiased}
+a{color:var(--text-link);text-decoration:none}
+a:hover{color:var(--text-link-hover)}
+h1,h2,h3,h4{font-family:var(--font-display);text-transform:uppercase;letter-spacing:var(--ls-display);margin:0}
+h1{font-weight:var(--fw-display);font-size:var(--type-h1);line-height:var(--lh-h1);color:var(--text-heading)}
+h2{font-weight:var(--fw-display);font-size:var(--type-h2);line-height:var(--lh-h2);color:var(--text-heading)}
+h3{font-weight:var(--fw-display-strong);font-size:var(--type-h3);color:var(--text-strong)}
+p{margin:0}
