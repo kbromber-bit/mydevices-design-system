@@ -1,0 +1,100 @@
+:root{
+  /* ---- Base palette ---- */
+  --md-white:#ffffff; /* @kind color */
+  /* section alternator, footer */
+  --md-off-white:#f7f7f7; /* @kind color */
+  /* pale blue-grey surface / insight callouts */
+  --md-blue-tint:#f3f9fe; /* @kind color */
+  /* badge fill, CTA glow */
+  --md-blue-tint-2:#e8f4fc; /* @kind color */
+  --md-blue-border:#dcecf8; /* @kind color */
+  --md-blue-border-strong:#bfe0f4; /* @kind color */
+  --md-blue-border-soft:#cfe4f5; /* @kind color */
+
+  /* THE accent. All CTAs, links, emphasis. */
+  --md-blue:#0d83d0; /* @kind color */
+  /* hover / pressed */
+  --md-blue-dark:#0a6aa8; /* @kind color */
+  /* accent on navy only */
+  --md-blue-light:#56b0ea; /* @kind color */
+  /* vertical card top-rule (cold chain) */
+  --md-blue-2b:#2b8fd0; /* @kind color */
+
+  /* the one dark section per page */
+  --md-navy:#0b2436; /* @kind color */
+  /* navy surface step */
+  --md-navy-2:#17394f; /* @kind color */
+  /* body text on navy */
+  --md-navy-ink:#b9c7d4; /* @kind color */
+  /* de-emphasised stats / captions on navy */
+  --md-navy-ink-dim:#7f92a3; /* @kind color */
+  --md-navy-ink-bright:#e6eef5; /* @kind color */
+
+  /* RESERVED: live / working status only */
+  --md-green:#1bb98a; /* @kind color */
+  /* green text on light */
+  --md-green-dark:#157a5c; /* @kind color */
+  --md-green-tint:#e3f6ee; /* @kind color */
+
+  /* Category hues — only as 3px card top-rules in the verticals grid. Never fills, never text. */
+  --md-cat-energy:#f5a623; /* @kind color */
+  --md-cat-coldchain:#2b8fd0; /* @kind color */
+  --md-cat-machine:#1bb98a; /* @kind color */
+  --md-cat-water:#9b59b6; /* @kind color */
+  --md-cat-air:#e89a3c; /* @kind color */
+  --md-cat-asset:#d9784f; /* @kind color */
+
+  /* ---- Neutrals / ink ---- */
+  /* charcoal — headline line 1, strong text */
+  --md-ink:#1e1e1e; /* @kind color */
+  /* display headings (very slightly warm) */
+  --md-ink-display:#343633; /* @kind color */
+  /* body default */
+  --md-ink-body:#363636; /* @kind color */
+  /* paragraph / secondary */
+  --md-ink-muted:#5d5d5d; /* @kind color */
+  /* mono captions, meta */
+  --md-ink-soft:#8a8a8a; /* @kind color */
+  /* source citations, footnotes */
+  --md-ink-faint:#a0a0a0; /* @kind color */
+  --md-ink-placeholder:#9aa3ab; /* @kind color */
+  --md-slate:#4a5560; /* @kind color */
+  /* placeholder captions */
+  --md-slate-soft:#8a96a2; /* @kind color */
+
+  /* THE 1px border colour */
+  --md-line:#e6e8eb; /* @kind color */
+  /* inner dividers */
+  --md-line-soft:#eef1f4; /* @kind color */
+  /* honest placeholder outlines */
+  --md-line-dashed:#c4d0da; /* @kind color */
+  /* chrome bars inside cards */
+  --md-surface-raised:#fbfcfd; /* @kind color */
+
+  /* ---- Semantic aliases ---- */
+  --text-body:var(--md-ink-body); /* @kind color */
+  --text-heading:var(--md-ink-display); /* @kind color */
+  --text-strong:var(--md-ink); /* @kind color */
+  --text-muted:var(--md-ink-muted); /* @kind color */
+  --text-meta:var(--md-ink-soft); /* @kind color */
+  --text-source:var(--md-ink-faint); /* @kind color */
+  --text-link:var(--md-blue); /* @kind color */
+  --text-link-hover:var(--md-blue-dark); /* @kind color */
+  --text-on-navy:var(--md-navy-ink); /* @kind color */
+  --accent:var(--md-blue); /* @kind color */
+  --accent-hover:var(--md-blue-dark); /* @kind color */
+  --accent-on-dark:var(--md-blue-light); /* @kind color */
+  --status-live:var(--md-green); /* @kind color */
+  --surface-page:var(--md-white); /* @kind color */
+  --surface-alt:var(--md-off-white); /* @kind color */
+  --surface-card:var(--md-white); /* @kind color */
+  --surface-tint:var(--md-blue-tint); /* @kind color */
+  --surface-dark:var(--md-navy); /* @kind color */
+  --border-card:var(--md-line); /* @kind color */
+  --border-inner:var(--md-line-soft); /* @kind color */
+
+  /* ---- Signature background washes ---- */
+  --wash-hero:radial-gradient(120% 78% at 50% -8%,#f3f9fe,#fff 68%); /* @kind color */
+  --wash-cta:radial-gradient(120% 90% at 50% 120%,#e8f4fc,#fff 70%); /* @kind color */
+  --wash-placeholder:repeating-linear-gradient(135deg,#eef2f6,#eef2f6 12px,#f6f8fb 12px,#f6f8fb 24px); /* @kind color */
+}
