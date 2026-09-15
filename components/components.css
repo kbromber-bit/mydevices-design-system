@@ -1,0 +1,33 @@
+/* Interactive states for myDevices components. Values copied verbatim from the source design. */
+.md-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--font-display);font-weight:var(--fw-display-strong);text-transform:uppercase;letter-spacing:var(--ls-mono);text-decoration:none;border:0;cursor:pointer;white-space:nowrap;transition:var(--transition-hover)}
+.md-btn--lg{font-size:17px;padding:17px 36px;border-radius:var(--radius-btn)}
+.md-btn--md{font-size:13px;padding:12px 22px;border-radius:var(--radius-btn-sm)}
+.md-btn--sm{font-size:12px;padding:9px 17px;border-radius:var(--radius-btn-sm)}
+.md-btn--primary{background:var(--accent);color:#fff;box-shadow:var(--glow-btn)}
+.md-btn--primary:hover{background:var(--accent-hover);color:#fff;transform:var(--lift);box-shadow:var(--glow-btn-hover)}
+.md-btn--secondary{background:#fff;color:var(--accent);border:1.5px solid var(--md-blue-border-soft)}
+.md-btn--secondary:hover{border-color:var(--accent);color:var(--accent-hover);transform:var(--lift);box-shadow:var(--glow-card-hover)}
+.md-btn--ghost{background:transparent;color:var(--md-ink-body)}
+.md-btn--ghost:hover{color:var(--accent)}
+.md-btn:disabled,.md-btn[aria-disabled=true]{opacity:.42;pointer-events:none;box-shadow:none}
+
+.md-card{background:var(--surface-card);border:var(--border);border-radius:var(--radius-card-xs)}
+.md-card--lift{transition:box-shadow var(--dur-fast) ease,transform var(--dur-fast) ease}
+.md-card--lift:hover{box-shadow:var(--glow-card)}
+
+.md-navlink{font-family:var(--font-display);font-weight:var(--fw-display-med);font-size:14px;text-transform:uppercase;letter-spacing:var(--ls-mono);color:var(--md-ink-muted);white-space:nowrap;text-decoration:none;transition:color var(--dur-fast) ease}
+.md-navlink:hover{color:var(--accent)}
+.md-navlink--ink{color:var(--md-ink-body)}
+
+.md-arrowlink{font-family:var(--font-mono);font-size:12px;text-transform:uppercase;letter-spacing:var(--ls-mono);color:var(--accent);font-weight:var(--fw-mono-bold);text-decoration:none;transition:color var(--dur-fast) ease}
+.md-arrowlink:hover{color:var(--accent-hover)}
+
+.md-ai-chip{display:inline-flex;align-items:center;justify-content:center;gap:11px;background:#fff;border:1.5px solid var(--md-line);border-radius:var(--radius-card-sm);padding:16px 28px;cursor:pointer;text-decoration:none;transition:var(--transition-hover)}
+.md-ai-chip:hover{transform:var(--lift-card);border-color:var(--accent);box-shadow:0 18px 34px -22px rgba(13,131,208,.55)}
+
+.md-social{width:34px;height:34px;border-radius:50%;border:1px solid #dcdfe3;display:flex;align-items:center;justify-content:center;color:var(--md-ink-muted);transition:color var(--dur-fast) ease,border-color var(--dur-fast) ease}
+.md-social:hover{color:var(--accent);border-color:var(--accent)}
+
+.md-footlink{font-family:var(--font-body);font-size:14.5px;color:var(--md-ink-muted);text-decoration:none;transition:color var(--dur-fast) ease}
+.md-footlink:hover{color:var(--accent)}
+.md-footlink--fine{font-size:13px;color:var(--md-ink-soft)}
