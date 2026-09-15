@@ -1,0 +1,27 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Core primitives" subtitle="Buttons, eyebrows, headline, live badge, chips, stats, placeholders" -->
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:22px;background:#fff}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.stack{display:flex;flex-direction:column;gap:18px}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { Button, Eyebrow, Headline, LiveBadge, Pill, SourceNote, StatFigure, Placeholder } = window.MyDevicesDesignSystem_4334d1;
+function Card(){return (
+  <div className="stack">
+    <div className="row"><Button href="#">Book a demo</Button><Button variant="secondary" href="#" icon="→">Start free trial</Button><Button variant="ghost" size="md">Sign in</Button><Button size="md" disabled>Disabled</Button></div>
+    <div className="row" style={{gap:26}}><Eyebrow>A real example</Eyebrow><Eyebrow size="md">Connect to the AI you already use</Eyebrow><Eyebrow size="sm" tone="muted">Trusted by teams at</Eyebrow></div>
+    <Headline setup="Six weeks of work." payoff="Now it just shows up." />
+    <div className="row"><LiveBadge>Live in 24 hours · no credit card</LiveBadge><LiveBadge variant="inline">live</LiveBadge></div>
+    <div className="row"><Pill>"Any cold-chain excursions today?"</Pill><Pill font="mono" tone="outline">▢ Provide asset</Pill><Pill font="mono" tone="neutral">Generating…</Pill><Pill font="mono" tone="green">✓ Generated</Pill><Pill font="mono" tone="navy">3 / 10</Pill></div>
+    <div className="row" style={{gap:40,alignItems:'flex-end'}}>
+      <StatFigure size="md" align="left" value="6 wks">saved / quarter</StatFigure>
+      <StatFigure size="md" align="left" value="Mins">not weeks</StatFigure>
+      <Placeholder shape="avatar" size={44} />
+      <div style={{width:150,border:'1px solid var(--md-line)',borderRadius:12,overflow:'hidden'}}><Placeholder ratio="4/3" label="Provide asset" note="plant photo ≈900×675" /></div>
+    </div>
+    <SourceNote>Source: IoT Analytics · Digital &amp; AI Adoption in Process Manufacturing, 2026</SourceNote>
+  </div>);}
+ReactDOM.createRoot(document.getElementById('root')).render(<Card/>);
+</script></body></html>

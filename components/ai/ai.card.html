@@ -1,0 +1,21 @@
+<!-- @dsCard group="Components" viewport="1000x400" name="In-AI surfaces" subtitle="Assistant panel, thread turns, generated artifact preview" -->
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:22px;background:#fff}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.stack{display:flex;flex-direction:column;gap:18px}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { ChatPanel, ChatMessage, ArtifactCard } = window.MyDevicesDesignSystem_4334d1;
+const deck=['../../assets/artifacts/deck-slide-1.png','../../assets/artifacts/deck-slide-2.png','../../assets/artifacts/deck-slide-3.png'];
+function Demo(){return (
+  <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:20,alignItems:'start'}}>
+    <ChatPanel assistant="Claude" assistantIcon="../../assets/ai/claude.png" height={356}>
+      <ChatMessage>Turn May's numbers into the monthly management review deck.</ChatMessage>
+      <ChatMessage role="assistant" avatar="../../assets/ai/claude.png" statusDone status="10 slides · every figure traced to a live meter" insight="Plant ran 242,413 kWh in May — +2.1% vs April, driven almost entirely by one area." confirm="A board-ready review deck. No copy-paste, no stale numbers." />
+    </ChatPanel>
+    <ArtifactCard kind="deck" file="Management Review — May 2026.pptx" total={10} images={deck} index={1} />
+  </div>);}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>

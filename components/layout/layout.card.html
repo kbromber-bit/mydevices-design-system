@@ -1,0 +1,25 @@
+<!-- @dsCard group="Components" viewport="700x340" name="Layout & quotes" subtitle="Card radii and category rules, pull quote, byline" -->
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:22px;background:#fff}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.stack{display:flex;flex-direction:column;gap:18px}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { Card, PullQuote, Byline } = window.MyDevicesDesignSystem_4334d1;
+function Demo(){return (
+  <div className="stack">
+    <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:16}}>
+      <Card hover rule="var(--md-cat-energy)"><div style={{fontFamily:'var(--font-display)',fontWeight:700,textTransform:'uppercase',fontSize:16,color:'var(--md-ink)'}}>Energy</div><p style={{fontSize:14,color:'var(--md-ink-muted)',margin:'8px 0 0'}}>12px radius · hover glow · 3px rule</p></Card>
+      <Card radius="sm" hover rule="var(--md-cat-machine)"><div style={{fontFamily:'var(--font-display)',fontWeight:700,textTransform:'uppercase',fontSize:16,color:'var(--md-ink)'}}>Machine health</div><p style={{fontSize:14,color:'var(--md-ink-muted)',margin:'8px 0 0'}}>14px radius</p></Card>
+      <Card radius="md"><div style={{fontFamily:'var(--font-display)',fontWeight:700,textTransform:'uppercase',fontSize:16,color:'var(--md-ink)'}}>Panel</div><p style={{fontSize:14,color:'var(--md-ink-muted)',margin:'8px 0 0'}}>16px radius · no rule</p></Card>
+    </div>
+    <PullQuote>"The reports just show up now. Once it's set up, that's the benefit you get on a regular basis — and it works the same way at every site."</PullQuote>
+    <div className="row" style={{gap:40}}>
+      <Byline size="lg" name="Dorian Robison" role="Sustainability Coordinator, Freudenberg-NOK Sealing Technologies" />
+      <Byline name="Chloe Saliba" role="Operandio — food-service ops platform" />
+    </div>
+  </div>);}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>
