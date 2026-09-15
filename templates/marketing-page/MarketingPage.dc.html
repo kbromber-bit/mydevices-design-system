@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Marketing page" description="myDevices marketing page: sticky header, setup/payoff hero, AI chips, use-case grid, one navy stat band, closing CTA, footer." -->
+<helmet>
+<script src="./ds-base.js"></script>
+</helmet>
+<div style="background:#fff;color:#363636;font-family:'Lato',system-ui,sans-serif">
+
+<x-import component-from-global-scope="MyDevicesDesignSystem_4334d1.SiteHeader" base-path="../../" hint-size="100%,76px"></x-import>
+
+<section style="padding:88px 28px 84px;text-align:center;background:radial-gradient(120% 78% at 50% -8%,#f3f9fe,#fff 68%)">
+  <div style="max-width:1000px;margin:0 auto">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:16px;letter-spacing:.09em;text-transform:uppercase;color:#0D83D0;font-weight:500;margin-bottom:24px">Operational intelligence platform</div>
+    <h1 style="font-family:'League Spartan',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(44px,7.5vw,88px);line-height:.9;color:#343633;letter-spacing:-.01em;margin:0">Your machines can<br>talk to <span style="color:#0D83D0">AI</span> now.</h1>
+    <p style="margin:26px auto 0;font-size:clamp(18px,2.3vw,22px);color:#5d5d5d;max-width:46ch;line-height:1.5">One short paragraph in plain language. Say what connects, and what arrives automatically because of it.</p>
+    <div style="margin:44px auto 0"><x-import component-from-global-scope="MyDevicesDesignSystem_4334d1.AiChipRow" base-path="../../" hint-size="100%,150px"></x-import></div>
+    <div style="margin-top:40px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="#demo" style="font-family:'League Spartan',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:17px;padding:17px 36px;border-radius:11px;background:#0D83D0;color:#fff;text-decoration:none;box-shadow:0 16px 32px -16px rgba(13,131,208,.75)">Book a demo</a>
+      <a href="#trial" style="font-family:'League Spartan',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:17px;padding:17px 36px;border-radius:11px;background:#fff;color:#0D83D0;border:1.5px solid #cfe4f5;text-decoration:none">Start free trial →</a>
+    </div>
+    <div style="margin-top:18px;display:inline-flex;align-items:center;gap:9px;font-family:'League Spartan',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:13px;color:#0a6aa8;background:#e8f4fc;border:1px solid #bfe0f4;border-radius:99px;padding:8px 17px"><span style="width:9px;height:9px;border-radius:50%;background:#1bb98a;animation:mdpulse 2s infinite"></span>Live in 24 hours · no credit card</div>
+  </div>
+</section>
+
+<x-import component-from-global-scope="MyDevicesDesignSystem_4334d1.LogoBar" base-path="../../" hint-size="100%,160px"></x-import>
+
+<section style="padding:96px 28px">
+  <div style="max-width:1080px;margin:0 auto">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:16px;letter-spacing:.06em;text-transform:uppercase;color:#0D83D0;margin-bottom:18px">One platform, every monitoring problem</div>
+    <h2 style="font-family:'League Spartan',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(28px,4vw,44px);line-height:1.02;color:#343633;letter-spacing:-.01em;margin:0;max-width:20ch">Wherever your team is doing this work by hand, <span style="color:#0D83D0">we automate it.</span></h2>
+    <div style="margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="border:1px solid #e6e8eb;border-top:3px solid #f5a623;border-radius:12px;padding:24px 22px"><div style="font-family:'League Spartan',sans-serif;font-weight:700;text-transform:uppercase;font-size:16px;color:#1e1e1e">Energy management</div><p style="font-size:14px;color:#5d5d5d;line-height:1.55;margin:8px 0 12px">One sentence naming the manual chore this replaces.</p><a href="#" style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#0D83D0;font-weight:700;text-decoration:none">See audits, baselined →</a></div>
+      <div style="border:1px solid #e6e8eb;border-top:3px solid #2b8fd0;border-radius:12px;padding:24px 22px"><div style="font-family:'League Spartan',sans-serif;font-weight:700;text-transform:uppercase;font-size:16px;color:#1e1e1e">Cold chain &amp; compliance</div><p style="font-size:14px;color:#5d5d5d;line-height:1.55;margin:8px 0 12px">One sentence naming the manual chore this replaces.</p><a href="#" style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#0D83D0;font-weight:700;text-decoration:none">See excursions flagged →</a></div>
+      <div style="border:1px solid #e6e8eb;border-top:3px solid #1bb98a;border-radius:12px;padding:24px 22px"><div style="font-family:'League Spartan',sans-serif;font-weight:700;text-transform:uppercase;font-size:16px;color:#1e1e1e">Machine health &amp; OEE</div><p style="font-size:14px;color:#5d5d5d;line-height:1.55;margin:8px 0 12px">One sentence naming the manual chore this replaces.</p><a href="#" style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#0D83D0;font-weight:700;text-decoration:none">See failures caught early →</a></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:100px 28px;background:#0b2436">
+  <div style="max-width:1000px;margin:0 auto;text-align:center">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:16px;letter-spacing:.06em;text-transform:uppercase;color:#56b0ea;margin-bottom:18px">Why the answers can be trusted</div>
+    <h2 style="font-family:'League Spartan',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(28px,4vw,46px);line-height:1;color:#fff;letter-spacing:-.01em;margin:0">AI is only as good as<br><span style="color:#56b0ea">the data underneath it.</span></h2>
+    <p style="margin:18px auto 0;font-size:17px;color:#b9c7d4;max-width:60ch;line-height:1.6">Two sentences on the data foundation. Plain, technical, no hype.</p>
+    <div style="margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div style="opacity:.5"><div style="font-family:'League Spartan',sans-serif;font-weight:800;font-size:clamp(34px,5vw,52px);color:#7f92a3;line-height:1">88%</div><p style="font-size:12.5px;color:#7f92a3;margin:8px auto 0;max-width:28ch;line-height:1.5">Supporting figure that sets up the point.</p></div>
+      <div><div style="font-family:'League Spartan',sans-serif;font-weight:800;font-size:clamp(46px,7vw,74px);color:#56b0ea;line-height:1">71%</div><p style="font-size:14px;color:#e6eef5;font-weight:600;margin:10px auto 0;max-width:30ch;line-height:1.55">The one figure that makes the argument.</p></div>
+      <div style="opacity:.5"><div style="font-family:'League Spartan',sans-serif;font-weight:800;font-size:clamp(34px,5vw,52px);color:#7f92a3;line-height:1">84%</div><p style="font-size:12.5px;color:#7f92a3;margin:8px auto 0;max-width:28ch;line-height:1.5">Supporting figure that closes it.</p></div>
+    </div>
+    <div style="margin-top:22px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#7f92a3;letter-spacing:.03em">Source: name the report, publisher and year — every statistic carries one.</div>
+  </div>
+</section>
+
+<x-import component-from-global-scope="MyDevicesDesignSystem_4334d1.CtaSection" hint-size="100%,520px"></x-import>
+<x-import component-from-global-scope="MyDevicesDesignSystem_4334d1.SiteFooter" base-path="../../" hint-size="100%,360px"></x-import>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200}}"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800&family=Lato:wght@400;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</helmet>
+<section id="cta" style="padding:104px 28px;text-align:center;background:radial-gradient(120% 90% at 50% 120%,#e8f4fc,#fff 70%);border-top:1px solid #e6e8eb">
+  <div style="max-width:820px;margin:0 auto">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:16px;letter-spacing:.06em;text-transform:uppercase;color:#0D83D0;margin-bottom:18px">Try it yourself · right now</div>
+    <h2 style="font-family:'League Spartan',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(30px,5vw,52px);line-height:1.0;color:#343633;letter-spacing:-.01em;margin:0"><span ref="{{ rotRef }}" style="display:inline-block;white-space:nowrap;transition:opacity .3s ease">Stop pulling reports.</span><br><span style="color:#0D83D0;white-space:nowrap">Start asking questions.</span></h2>
+    <p style="margin:22px auto 0;font-size:18px;color:#5d5d5d;max-width:52ch;line-height:1.55">Connect once and start asking questions against live, enriched data, right inside the AI you already use. Live in 24 hours.</p>
+    <div style="margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="lorawan-lander.html" style="font-family:'League Spartan',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:17px;padding:17px 38px;border-radius:11px;background:#0D83D0;color:#fff;white-space:nowrap;text-decoration:none;box-shadow:0 16px 32px -16px rgba(13,131,208,.75);transition:transform .16s ease,box-shadow .16s ease,background .16s ease" style-hover="background:#0a6aa8;color:#fff;transform:translateY(-2px);box-shadow:0 22px 42px -18px rgba(13,131,208,.95)">Book a demo</a>
+      <a href="lorawan-lander.html" style="font-family:'League Spartan',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:17px;padding:17px 38px;border-radius:11px;background:#fff;color:#0D83D0;border:1.5px solid #cfe4f5;white-space:nowrap;text-decoration:none;transition:transform .16s ease,border-color .16s ease,color .16s ease,box-shadow .16s ease" style-hover="border-color:#0D83D0;color:#0a6aa8;transform:translateY(-2px);box-shadow:0 18px 34px -22px rgba(13,131,208,.6)">Start free trial →</a>
+    </div>
+  </div>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:520}}">
+class Component extends DCLogic {
+  state = { i: 0 };
+  phrases = ['Stop pulling reports.', 'Stop building dashboards.', 'Stop chasing spreadsheets.'];
+  rotRef = (el) => { this.rot = el; };
+  componentDidMount() {
+    this._t = setInterval(() => {
+      if (!this.rot) return;
+      this.rot.style.opacity = '0';
+      setTimeout(() => {
+        this._i = ((this._i || 0) + 1) % this.phrases.length;
+        if (this.rot) { this.rot.textContent = this.phrases[this._i]; this.rot.style.opacity = '1'; }
+      }, 300);
+    }, 2600);
+  }
+  componentWillUnmount() { clearInterval(this._t); }
+  renderVals() { return { rotRef: this.rotRef }; }
+}
+
+</script>
+</body>
+</html>
